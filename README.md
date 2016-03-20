@@ -65,4 +65,4 @@ For example, don't do this:
 tesla.getModel = getModel;
 ```
 
-Use __Prototype Linking__ instead.
+Use __Prototype Linking__ and __Behaviour Delegation__ instead.
