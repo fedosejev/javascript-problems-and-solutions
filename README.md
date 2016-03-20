@@ -55,3 +55,14 @@ Example:
 tesla.getModel(getFirstModel, getModelName).getIt(); // 'Model S'
 ```
 
+## 1.4
+
+In your previous solution avoid creating `getModel` property on `tesla` object.
+
+For example, don't do this:
+
+```js
+tesla.getModel = getModel;
+```
+
+Use __Prototype Linking__ instead.
