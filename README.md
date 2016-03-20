@@ -47,7 +47,7 @@ tesla.getModel(getFirstModel).getModelName(); // 'Model S'
 
 ## 1.3
 
-Modify previous solution: `getModel` should accept two parameters - 1) a function that knows which model to return and 2) a function that knows which property of the model to return. Then write `getIt` function that actually returns a value of that property.
+Modify previous solution: `getModel` function should accept two parameters - 1) a function that knows which model to return and 2) a function that knows which property of the model to return. Then write `getIt` function that actually returns the value of that property.
 
 Example:
 
