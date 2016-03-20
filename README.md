@@ -27,5 +27,31 @@ __Extra points__: use `this` keyword.
 
 ## 1.1
 
+Modify previous solution: instead of `getFirstModel` function, write `getModel` function that accepts number as a parameter. That number tells which object to return from `models` array.
 
+Example:
+
+```js
+tesla.getModel(1).getModelName(); // 'Model S'
+```
+
+## 1.2
+
+Modify previous solution: instead of number, `getModel` should accept a function as a parameter. That function knows which object to return from `models` array.
+
+Example:
+
+```js
+tesla.getModel(getFirstModel).getModelName(); // 'Model S'
+```
+
+## 1.3
+
+Modify previous solution: `getModel` should accept two parameters - 1) a function that knows which model to return and 2) a function that knows which property of the model to return. Then write `getIt` function that actually returns a value of that property.
+
+Example:
+
+```js
+tesla.getModel(getFirstModel, getModelName).getIt(); // 'Model S'
+```
 
