@@ -17,7 +17,7 @@ var tesla = {
 };
 ```
 
-Write a function `getFirstModel` that returns the first object from the `models` array. Then you can call `getModelName` on that object:
+Write two functions: 1) `getFirstModel` that returns the first object from the `models` array and 2) `getModelName` that returns model's name. These functions should be called like this:
 
 ```js
 tesla.getFirstModel().getModelName(); // 'Model S'
