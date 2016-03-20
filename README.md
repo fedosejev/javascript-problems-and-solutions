@@ -23,7 +23,7 @@ Write two functions: 1) `getFirstModel` that returns the first object from the `
 tesla.getFirstModel().getModelName(); // 'Model S'
 ```
 
-+ *Extra points*: use `this` keyword.
+__Extra points__: use `this` keyword.
 
 ## 1.1
 
