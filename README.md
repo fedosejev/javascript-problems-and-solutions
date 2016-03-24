@@ -66,3 +66,7 @@ tesla.getModel = getModel;
 ```
 
 Use __Prototype Linking__ and __Behaviour Delegation__ instead.
+
+## Solutions
+
++ [Solutions](solutions.md)
