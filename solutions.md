@@ -152,3 +152,47 @@ console.log(result); // 'Model S'
 ```
 
 + https://repl.it/BzXD
+
+## 1.4
+
+```js
+var tesla = {
+  models: [
+    {
+      name: 'Model S'
+    },
+    {
+      name: 'Model X'
+    }
+  ]
+};
+
+Object.prototype.getModel = getModel;
+
+function getFirstModel() {
+  return this.models[0];
+}
+
+function getModelName() {
+  return this.name;
+}
+
+function getModel(getSpecificModel, getSpecificProperty) {
+  var model = getSpecificModel.call(this);
+  var property = getSpecificProperty.call(model);
+
+  function getIt() {
+    return property;
+  }
+
+  model.getIt = getIt;
+
+  return model;
+}
+
+var result = tesla.getModel(getFirstModel, getModelName).getIt();
+
+console.log(result); // 'Model S'
+```
+
++ https://repl.it/BzXF
