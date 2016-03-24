@@ -69,3 +69,42 @@ console.log(result); // 'Model S'
 ```
 
 + https://repl.it/BzWw
+
+## 1.2
+
+```js
+var tesla = {
+  models: [
+    {
+      name: 'Model S'
+    },
+    {
+      name: 'Model X'
+    }
+  ]
+};
+
+tesla.getModel = getModel;
+
+function getFirstModel() {
+  return this.models[0];
+}
+
+function getModel(getSpecificModel) {
+  var model = getSpecificModel.call(this);
+  
+  function getModelName() {
+    return this.name;
+  }
+  
+  model.getModelName = getModelName;
+  
+  return model;
+}
+
+var result = tesla.getModel(getFirstModel).getModelName();
+
+console.log(result); // 'Model S'
+```
+
++ https://repl.it/BzWx
