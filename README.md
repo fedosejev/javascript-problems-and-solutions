@@ -67,7 +67,7 @@ tesla.getModel = getModel;
 
 Use __Prototype Linking__ and __Behaviour Delegation__ instead.
 
-## 2
+## 2.
 
 Write `processData` function that takes `data` as a parameter and returns a sting made of numbers that are less than `10` and that are ordered in descending order. Use `Array.prototype.map`, `Array.prototype.reduce`, `Array.prototype.filter`, etc. instead of `for` loops.
 
