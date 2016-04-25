@@ -70,3 +70,19 @@ Use __Prototype Linking__ and __Behaviour Delegation__ instead.
 ## Solutions
 
 + [Solutions](solutions.md)
+
+## 2
+
+Write `processData` function that takes `data` as a parameter and returns sting made of numbers that are less than `10` and that are ordered in descending order. Use `Array.prototype.map`, `Array.prototype.reduce`, `Array.prototype.filter`, etc. instead of `for` loops.
+
+For example, given `lists` object:
+
+```js
+var lists = {
+	list1: [10, 1, 22],
+	list2: [7, 99, 12.5],
+	list3: [0.75, 67, 11]
+};
+
+processData(lists); // returns `710.75`
+```
