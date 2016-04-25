@@ -196,3 +196,33 @@ console.log(result); // 'Model S'
 ```
 
 + https://repl.it/BzXF
+
+## 2
+
+```js
+function processData(data) {
+	var result;
+	var arrayOfKeys = Object.keys(data);
+	
+	result = arrayOfKeys // ['list1', 'list2', 'list3']
+			.reduce(function (accumulator, currentValue, currentIndex, array) {
+				return accumulator.concat(data[currentValue]);
+			}, [])
+			.filter(function (arrayElement) {
+				return arrayElement < 10;
+			})
+			.sort()
+			.reverse()
+			.join('');
+	
+	return result;
+}
+
+var sample = {
+	list1: [10, 1, 22],
+	list2: [7, 99, 12.5],
+	list3: [0.75, 67, 11]
+};
+
+console.log(processData(sample));
+```
