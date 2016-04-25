@@ -204,7 +204,7 @@ function processData(data) {
 	var result;
 	var arrayOfKeys = Object.keys(data);
 	
-	result = arrayOfKeys // ['list1', 'list2', 'list3']
+	result = arrayOfKeys
 			.reduce(function (accumulator, currentValue, currentIndex, array) {
 				return accumulator.concat(data[currentValue]);
 			}, [])
